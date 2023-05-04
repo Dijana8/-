@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        #grid1 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-auto-rows: minmax(50px, auto);
+            gap: 50px;
+            justify-content: space-between;
+        }
+
+        .box {
+            background-color: #8486df;
+            height: 120px;
+            width: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("placeholder-image.png");
+            box-shadow: 2px 2px 6px 2px #d6d6d6;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .img-title {
+            background-color: white;
+            color: black;
+            width: 200px;
+            height: 30%;
+            position: relative;
+            top: 100px;
+            box-shadow: 2px 2px 6px 2px #d6d6d6;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        p {
+            padding: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: sans-serif;
+        }
+
+        .text {
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 769px) {
+            .text {
+                font-size: 18px;
+
+            }
+
+            #grid1 {
+                grid-template-columns: auto auto auto;
+                grid-auto-rows: minmax(auto, auto);
+
+            }
+        }
+
+        @media screen and (max-width: 426px) {
+            .text {
+                font-size: 16px;
+            }
+
+            #grid1 {
+                grid-template-columns: auto;
+                grid-auto-rows: minmax(auto, auto);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="grid1">
+        <div id="box1" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box2" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box3" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box4" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box5" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box6" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box7" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box8" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box9" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div id="box10" class="box">
+            <div class="img-title">
+                <p>Image Title</p>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+        dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum.
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </div>
+
+</body>
+
+</html>
